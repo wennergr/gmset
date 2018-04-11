@@ -1,0 +1,13 @@
+[ignore]
+./node_modules/fbjs
+
+[include]
+
+[libs]
+./lib
+
+[lints]
+
+[options]
+
+[strict]

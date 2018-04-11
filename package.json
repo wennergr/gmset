@@ -1,0 +1,22 @@
+{
+  "name": "gmset",
+  "version": "0.0.1",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.69.0",
+    "flow-typed": "^2.4.0",
+    "jest": "^22.4.3",
+    "mocha": "^5.0.5"
+  },
+  "dependencies": {
+    "immutable": "4.0.0-rc.9"
+  },
+  "babel": {
+    "presets": ["flow"]
+  },
+  "scripts": {
+    "test": "yarn compile && jest",
+    "compile": "rm -rf dist/ && ./node_modules/.bin/babel src/ --out-dir dist/"
+  }
+}
